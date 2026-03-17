@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="logo.png">
     <title>Lobster MHA - Budidaya Lobster Profesional</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
@@ -203,9 +204,22 @@
         }
 
         @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translate(-50%, 0); }
-            40% { transform: translate(-50%, -20px); }
-            60% { transform: translate(-50%, -10px); }
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translate(-50%, 0);
+            }
+
+            40% {
+                transform: translate(-50%, -20px);
+            }
+
+            60% {
+                transform: translate(-50%, -10px);
+            }
         }
 
         /* --- TOMBOL UMUM --- */
@@ -320,8 +334,13 @@
             background-color: var(--secondary-color);
         }
 
-        .doc-prev { left: 10px; }
-        .doc-next { right: 10px; }
+        .doc-prev {
+            left: 10px;
+        }
+
+        .doc-next {
+            right: 10px;
+        }
 
         .doc-indicator {
             position: absolute;
@@ -404,7 +423,7 @@
             border-radius: 50px;
             font-weight: 600;
             text-decoration: none;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             transition: all 0.3s;
             z-index: 10;
             width: max-content;
@@ -452,11 +471,25 @@
             transform: translateY(-10px) scale(1.1);
         }
 
-        .icon-fb:hover { background-color: #1877F2; }
-        .icon-ig:hover { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #285AEB 90%); }
-        .icon-tiktok:hover { background-color: #000000; }
-        .icon-yt:hover { background-color: #FF0000; }
-        .icon-wa:hover { background-color: var(--wa-color); }
+        .icon-fb:hover {
+            background-color: #1877F2;
+        }
+
+        .icon-ig:hover {
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #285AEB 90%);
+        }
+
+        .icon-tiktok:hover {
+            background-color: #000000;
+        }
+
+        .icon-yt:hover {
+            background-color: #FF0000;
+        }
+
+        .icon-wa:hover {
+            background-color: var(--wa-color);
+        }
 
         /* --- TOMBOL KEMBALI KE ATAS --- */
         .back-to-top {
@@ -499,9 +532,24 @@
             font-size: 0.9rem;
         }
 
+        /* --- FOOTER LINK GLOW EFFECT --- */
+        .footer-link {
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .footer-link:hover {
+            color: #ffffff;
+            text-shadow: 0 0 8px #38bdf8, 0 0 15px #38bdf8, 0 0 20px #38bdf8;
+        }
+
         /* --- RESPONSIVE MOBILE --- */
         @media (max-width: 768px) {
-            .menu-toggle { display: block; }
+            .menu-toggle {
+                display: block;
+            }
 
             .nav-links {
                 position: absolute;
@@ -517,7 +565,9 @@
                 transition: max-height 0.4s ease-in-out;
             }
 
-            .nav-links.active { max-height: 300px; }
+            .nav-links.active {
+                max-height: 300px;
+            }
 
             .nav-links a {
                 display: block;
@@ -525,8 +575,14 @@
                 border-top: 1px solid rgba(255, 255, 255, 0.1);
             }
 
-            .nav-links a::after { display: none; }
-            .hero h1 { font-size: 2.2rem; }
+            .nav-links a::after {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
             .btn-map {
                 bottom: 10px;
                 padding: 8px 15px;
@@ -560,9 +616,11 @@
         <div class="hero-content fade-in">
             <h1>Budidaya Lobster Unggulan</h1>
             <p>Pusat Kemitraan & Ternak Lobster Air Tawar Berkualitas Tinggi di Pekanbaru.</p>
-            <a href="https://wa.me/6282285513028" target="_blank" class="btn btn-wa"><i class="fab fa-whatsapp"></i> Hubungi Kami</a>
+            <a href="https://wa.me/6282285513028" target="_blank" class="btn btn-wa"><i class="fab fa-whatsapp"></i>
+                Hubungi Kami</a>
         </div>
-        <a href="#dokumentasi" class="scroll-down" aria-label="Scroll ke Dokumentasi"><i class="fas fa-chevron-down"></i></a>
+        <a href="#dokumentasi" class="scroll-down" aria-label="Scroll ke Dokumentasi"><i
+                class="fas fa-chevron-down"></i></a>
     </header>
 
     <section class="section-padding" id="dokumentasi">
@@ -570,40 +628,55 @@
         <div class="gallery-grid fade-in">
             <div class="gallery-card">
                 <div class="doc-img-container">
-                    <img id="img-kolam" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvpvvXJFrjxOQweRMsLOBkTJr9TVhcQGv3EQ&s" alt="Sistem Kolam">
-                    <button class="doc-btn doc-prev" onclick="changeImage('kolam', -1)"><i class="fas fa-chevron-left"></i></button>
-                    <button class="doc-btn doc-next" onclick="changeImage('kolam', 1)"><i class="fas fa-chevron-right"></i></button>
+                    <img id="img-kolam"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvpvvXJFrjxOQweRMsLOBkTJr9TVhcQGv3EQ&s"
+                        alt="Sistem Kolam">
+                    <button class="doc-btn doc-prev" onclick="changeImage('kolam', -1)"><i
+                            class="fas fa-chevron-left"></i></button>
+                    <button class="doc-btn doc-next" onclick="changeImage('kolam', 1)"><i
+                            class="fas fa-chevron-right"></i></button>
                     <span class="doc-indicator" id="ind-kolam">1 / 5</span>
                 </div>
                 <div class="gallery-info">
                     <h3>Sistem Kolam Pembesaran</h3>
-                    <p>Fasilitas kolam air tawar kami dirancang khusus dengan sirkulasi optimal untuk memastikan pertumbuhan lobster yang sehat dan cepat.</p>
+                    <p>Fasilitas kolam air tawar kami dirancang khusus dengan sirkulasi optimal untuk memastikan
+                        pertumbuhan lobster yang sehat dan cepat.</p>
                 </div>
             </div>
 
             <div class="gallery-card">
                 <div class="doc-img-container">
-                    <img id="img-bibit" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSoVeZGPlevs3-kyAfFKujNiKeSuU3FNvk2g&s" alt="Pemilihan Bibit">
-                    <button class="doc-btn doc-prev" onclick="changeImage('bibit', -1)"><i class="fas fa-chevron-left"></i></button>
-                    <button class="doc-btn doc-next" onclick="changeImage('bibit', 1)"><i class="fas fa-chevron-right"></i></button>
+                    <img id="img-bibit"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSoVeZGPlevs3-kyAfFKujNiKeSuU3FNvk2g&s"
+                        alt="Pemilihan Bibit">
+                    <button class="doc-btn doc-prev" onclick="changeImage('bibit', -1)"><i
+                            class="fas fa-chevron-left"></i></button>
+                    <button class="doc-btn doc-next" onclick="changeImage('bibit', 1)"><i
+                            class="fas fa-chevron-right"></i></button>
                     <span class="doc-indicator" id="ind-bibit">1 / 5</span>
                 </div>
                 <div class="gallery-info">
                     <h3>Seleksi Indukan & Bibit</h3>
-                    <p>Proses seleksi ketat untuk menghasilkan bibit unggul yang tahan penyakit dan memiliki tingkat kelangsungan hidup (SR) yang tinggi.</p>
+                    <p>Proses seleksi ketat untuk menghasilkan bibit unggul yang tahan penyakit dan memiliki tingkat
+                        kelangsungan hidup (SR) yang tinggi.</p>
                 </div>
             </div>
 
             <div class="gallery-card">
                 <div class="doc-img-container">
-                    <img id="img-panen" src="https://cdn.antaranews.com/cache/1200x800/2012/09/20120914Bakar-Lobster-Masal-130912-bean-1xx.jpg" alt="Proses Panen">
-                    <button class="doc-btn doc-prev" onclick="changeImage('panen', -1)"><i class="fas fa-chevron-left"></i></button>
-                    <button class="doc-btn doc-next" onclick="changeImage('panen', 1)"><i class="fas fa-chevron-right"></i></button>
+                    <img id="img-panen"
+                        src="https://cdn.antaranews.com/cache/1200x800/2012/09/20120914Bakar-Lobster-Masal-130912-bean-1xx.jpg"
+                        alt="Proses Panen">
+                    <button class="doc-btn doc-prev" onclick="changeImage('panen', -1)"><i
+                            class="fas fa-chevron-left"></i></button>
+                    <button class="doc-btn doc-next" onclick="changeImage('panen', 1)"><i
+                            class="fas fa-chevron-right"></i></button>
                     <span class="doc-indicator" id="ind-panen">1 / 5</span>
                 </div>
                 <div class="gallery-info">
                     <h3>Proses Panen Berkala</h3>
-                    <p>Pemanenan dilakukan secara profesional dengan teknik penyortiran yang aman untuk menjaga kualitas lobster hingga ke tangan pembeli.</p>
+                    <p>Pemanenan dilakukan secara profesional dengan teknik penyortiran yang aman untuk menjaga kualitas
+                        lobster hingga ke tangan pembeli.</p>
                 </div>
             </div>
         </div>
@@ -616,28 +689,36 @@
                 <i class="fas fa-box-open"></i>
                 <h3>Pesan Bibit Unggul</h3>
                 <p>Sediakan bibit sehat siap tebar.</p><br>
-                <a href="https://wa.me/6282285513028?text=Halo,%20pesan%20bibit" class="btn btn-wa" target="_blank">Pesan via WA</a>
+                <a href="https://wa.me/6282285513028?text=Halo,%20pesan%20bibit" class="btn btn-wa"
+                    target="_blank">Pesan via WA</a>
             </div>
             <div class="card">
                 <i class="fas fa-handshake"></i>
                 <h3>Gabung Mitra</h3>
                 <p>Pendampingan dari awal hingga panen.</p><br>
-                <a href="https://wa.me/6282285513028?text=Halo,%20daftar%20mitra" class="btn btn-wa" target="_blank">Daftar Mitra</a>
+                <a href="https://wa.me/6282285513028?text=Halo,%20daftar%20mitra" class="btn btn-wa"
+                    target="_blank">Daftar Mitra</a>
             </div>
             <div class="card">
                 <i class="fas fa-comments"></i>
                 <h3>Konsultasi Gratis</h3>
                 <p>Tanya jawab kendala dan pakan.</p><br>
-                <a href="https://wa.me/6282285513028?text=Halo,%20mau%20konsultasi" class="btn btn-wa" target="_blank">Chat Sekarang</a>
+                <a href="https://wa.me/6282285513028?text=Halo,%20mau%20konsultasi" class="btn btn-wa"
+                    target="_blank">Chat Sekarang</a>
             </div>
         </div>
     </section>
 
     <section class="section-padding" id="lokasi">
         <h2 class="section-title fade-in">Lokasi Usaha</h2>
-        <p class="fade-in" style="margin-bottom: 20px;"><i class="fas fa-map-marker-alt" style="color: var(--secondary-color);"></i> Jl. Mawar, Simpang Baru, Kec. Tampan, Kota Pekanbaru, Riau 28292, Indonesia (Patokannya Kos Maldif Home)</p>
+        <p class="fade-in" style="margin-bottom: 20px;"><i class="fas fa-map-marker-alt"
+                style="color: var(--secondary-color);"></i> Jl. Mawar, Simpang Baru, Kec. Tampan, Kota Pekanbaru, Riau
+            28292, Indonesia (Patokannya Kos Maldif Home)</p>
         <div class="map-container fade-in">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d225.65329867343186!2d101.37406961154994!3d0.47676265915033117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5a98e7d6347f9%3A0x4a0412b2c9abb3f3!2sMALDIF%20HOME!5e1!3m2!1sid!2skr!4v1773716387207!5m2!1sid!2skr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d225.65329867343186!2d101.37406961154994!3d0.47676265915033117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5a98e7d6347f9%3A0x4a0412b2c9abb3f3!2sMALDIF%20HOME!5e1!3m2!1sid!2skr!4v1773716387207!5m2!1sid!2skr"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
             <a href="https://maps.app.goo.gl/FZmP2WnXUaqdj2G19" target="_blank" class="btn-map">
                 <i class="fas fa-location-arrow"></i> Telusuri Lokasi Kami
             </a>
@@ -648,16 +729,28 @@
         <h2 class="section-title fade-in">Temukan Kami</h2>
         <p class="fade-in">Ikuti update terbaru dari kami di media sosial:</p>
         <div class="social-icons fade-in">
-            <a href="https://www.instagram.com/mhdharisamin/" target="_blank" class="social-icon icon-ig"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.tiktok.com/@mhdharisamin?lang=id-ID" target="_blank" class="social-icon icon-tiktok"><i class="fab fa-tiktok"></i></a>
-            <a href="https://www.facebook.com/m.h.amin.129" target="_blank" class="social-icon icon-fb"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.youtube.com/@harisamin7942" target="_blank" class="social-icon icon-yt"><i class="fab fa-youtube"></i></a>
-            <a href="https://wa.me/6282285513028" target="_blank" class="social-icon icon-wa"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/mhdharisamin/" target="_blank" class="social-icon icon-ig"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@mhdharisamin?lang=id-ID" target="_blank" class="social-icon icon-tiktok"><i
+                    class="fab fa-tiktok"></i></a>
+            <a href="https://www.facebook.com/m.h.amin.129" target="_blank" class="social-icon icon-fb"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/@harisamin7942" target="_blank" class="social-icon icon-yt"><i
+                    class="fab fa-youtube"></i></a>
+            <a href="https://wa.me/6282285513028" target="_blank" class="social-icon icon-wa"><i
+                    class="fab fa-whatsapp"></i></a>
         </div>
     </section>
 
     <footer>
-        <p>© 2026 Lobster MHA. All Rights Reserved.</p>
+        <div class="footer-bottom">
+            <p class="copyright-text">
+                © 2026 - Website Lobster MHA. Dibuat Oleh
+                <a href="https://sobatwebsitemu.github.io/CVPorto/" target="_blank" class="footer-link">
+                    Eizitpie Production
+                </a>.
+            </p>
+        </div>
     </footer>
 
     <a href="#beranda" class="back-to-top" id="backToTop" title="Kembali ke atas"><i class="fas fa-chevron-up"></i></a>
@@ -752,7 +845,7 @@
 
         // 6. Logika Galeri Mini
         const docImages = {
-           kolam: [
+            kolam: [
                 "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvpvvXJFrjxOQweRMsLOBkTJr9TVhcQGv3EQ&s",
                 "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTlGAkCgFyL2RjWppvXRN_RXAF6EvmwFCBiw&s",
                 "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaypARuW9m0zaTpBDx71B4TnGFKy-CAoD87g&s",
